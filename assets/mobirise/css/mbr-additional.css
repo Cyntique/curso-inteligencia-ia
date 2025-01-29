@@ -978,7 +978,7 @@ a {
   width: 30px;
   height: 2px;
   border-right: 5px;
-  background-color: #000000;
+  background-color: #ffffff;
 }
 .cid-uADXCh2YuR button.navbar-toggler .hamburger span:nth-child(1) {
   top: 0;
@@ -1434,11 +1434,13 @@ a {
 /***************Mis estilos**********************************/
 .countdown-display {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
-.countdown-display h4{
+.text-banner h4{
+  padding-top: 0.5rem;
   color: white;
   font-size: 1.5rem;
 }
@@ -1448,9 +1450,28 @@ a {
   font-weight: bold;
   color: #ffffff;
 }
+.time{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .separator {
   font-size: 2rem;
   font-weight: bold;
   color: #ffffff;
+}
+
+
+@media (max-width: 759px){
+  .time-value{
+    font-size: 2rem;
+  }
+  .separator{
+    font-size: 1.5rem;
+  }
+  .countdown-display{
+    gap: 1rem;
+  }
+
 }
